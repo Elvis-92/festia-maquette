@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, useEffect, useMemo, useState } from "react";
+import Link from "next/link";
 
 type Stage = "invitation" | "rsvp" | "organisateur" | "entree";
 type Theme = "light" | "dark";
@@ -147,6 +148,7 @@ function StageBody({
           <button className="text-action" type="button" onClick={onRsvpStep}>
             Essayer la réponse <ArrowIcon />
           </button>
+          <Link className="text-action full-invitation-link" href="/invitation/">Parcourir l’invitation complète <ArrowIcon /></Link>
         </div>
       </div>
     );
@@ -309,7 +311,7 @@ export default function Home() {
           <div className="pilot-note"><span className="pilot-dot" /> Test en cours au Bénin, au Togo et en Côte d’Ivoire</div>
         </div>
         <div className="opening-art" aria-label="Exemple fictif d’invitation">
-          <div className="opening-art__folio"><span className="folio-index">DOSSIER FESTIA <b>Nº 001</b></span><InvitePreview onConfirm={() => setStage("rsvp")} /><span className="folio-caption">Une invitation de démonstration · Noms fictifs</span><span className="folio-caption folio-caption--promise">Une page · un lien · toutes les réponses</span></div>
+          <div className="opening-art__folio"><span className="folio-index">DOSSIER FESTIA <b>Nº 001</b></span><InvitePreview onConfirm={() => setStage("rsvp")} /><span className="folio-caption">Une invitation de démonstration · Noms fictifs</span><span className="folio-caption folio-caption--promise">Une page · un lien · toutes les réponses</span><Link className="folio-open-link" href="/invitation/">Voir l’invitation complète <ArrowIcon /></Link></div>
         </div>
       </section>
 
