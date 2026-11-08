@@ -150,7 +150,7 @@ export default function InvitationClient() {
           </header>
 
           <section className="wedding-cover" aria-labelledby="couple-names">
-            <img className="wedding-cover__photo" src="../demo-wedding-hero.jpg" alt="Photographie d’illustration d’un couple de mariés lors d’une cérémonie" />
+            <img className="wedding-cover__photo" src="demo-wedding-hero.jpg" alt="Photographie d’illustration d’un couple de mariés lors d’une cérémonie" />
             <div className="wedding-cover__shade" />
             <div className="wedding-cover__caption">
               <span>AVEC LA JOIE DE NOS FAMILLES</span>
@@ -194,7 +194,7 @@ export default function InvitationClient() {
           </section>
 
           <section className="wedding-program" id="programme" aria-labelledby="program-title">
-            <div className="program-photo"><img src="../demo-wedding-gallery.jpg" alt="Photographie d’illustration d’une mariée pendant la célébration" /><span>UNE JOURNÉE À VIVRE ENSEMBLE</span></div>
+            <div className="program-photo"><img src="demo-wedding-gallery.jpg" alt="Photographie d’illustration d’une mariée pendant la célébration" /><span>UNE JOURNÉE À VIVRE ENSEMBLE</span></div>
             <div className="program-copy">
               <p>LE DÉROULÉ</p>
               <h2 id="program-title">À chaque heure,<br /><i>un souvenir.</i></h2>
